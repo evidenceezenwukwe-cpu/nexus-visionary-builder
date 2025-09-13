@@ -87,19 +87,10 @@ const HeroSection = () => {
                 alt="Evidence Ezenwukwe"
                 className="relative z-10 w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 object-cover rounded-full shadow-[var(--shadow-elegant)] animate-float"
               />
-              <div className="absolute -bottom-2 -right-2 sm:-bottom-4 sm:-right-4 w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 bg-gradient-to-r from-primary to-accent rounded-full flex items-center justify-center animate-glow">
-                <Users className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 text-primary-foreground" />
-              </div>
             </div>
           </div>
         </div>
 
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-muted-foreground rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-muted-foreground rounded-full mt-2 animate-pulse" />
-          </div>
-        </div>
       </div>
     </section>
   );

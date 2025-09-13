@@ -49,10 +49,10 @@ const Navigation = () => {
             <img 
               src={nexusLogo} 
               alt="The Nexus Initiative" 
-              className="w-10 h-10 rounded-full object-cover animate-pulse-glow"
+              className="w-8 h-8 sm:w-10 sm:h-10 rounded-full object-cover animate-pulse-glow"
             />
-            <span className="font-display font-semibold text-lg lg:text-xl">
-              The Nexus Initiative
+            <span className="font-display font-semibold text-sm sm:text-lg lg:text-xl">
+              Nexus
             </span>
           </div>
 

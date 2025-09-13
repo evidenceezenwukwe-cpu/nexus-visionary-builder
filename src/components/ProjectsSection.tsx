@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { BookOpen, Download, ExternalLink, Clock, Globe, Zap } from "lucide-react";
 import noCodeBookCover from "@/assets/no-code-book-cover.jpg";
-import nigerianSitesBookCover from "@/assets/nigerian-sites-book-cover.jpg";
+import nigerianSitesBookCover from "@/assets/100-sites-book-cover.jpg";
 
 const ProjectsSection = () => {
   const ebooks = [
@@ -11,7 +11,7 @@ const ProjectsSection = () => {
       title: "100+ Sites Nigerians Are Making Dollars From Monthly",
       description: "A comprehensive guide to legitimate online income opportunities specifically for Nigerians. Discover platforms, strategies, and real-world case studies.",
       cover: nigerianSitesBookCover,
-      price: "₦15,000",
+      price: "₦3,000",
       status: "Available",
       features: ["100+ Verified Sites", "Case Studies", "Step-by-step Guides", "Nigerian Focus"]
     },
