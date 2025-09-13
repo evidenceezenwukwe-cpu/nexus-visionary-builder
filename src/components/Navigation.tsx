@@ -45,14 +45,9 @@ const Navigation = () => {
       <div className="section-container">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
-            <img 
-              src={nexusLogo} 
-              alt="The Nexus Initiative" 
-              className="w-8 h-8 sm:w-10 sm:h-10 rounded-full object-cover animate-pulse-glow"
-            />
-            <span className="font-display font-semibold text-sm sm:text-lg lg:text-xl">
-              Nexus
+          <div className="flex items-center">
+            <span className="font-display font-bold text-lg lg:text-xl">
+              Evidence
             </span>
           </div>
 
@@ -69,17 +64,8 @@ const Navigation = () => {
             ))}
           </div>
 
-          {/* Theme Toggle & Mobile Menu */}
-          <div className="flex items-center space-x-4">
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={toggleTheme}
-              className="w-10 h-10 p-0"
-            >
-              {isDark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
-            </Button>
-            
+          {/* Mobile Menu */}
+          <div className="flex items-center">
             <Button
               variant="outline"
               size="sm"
@@ -104,6 +90,17 @@ const Navigation = () => {
                 {link.label}
               </a>
             ))}
+            <div className="border-t border-border mt-4 pt-4">
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={toggleTheme}
+                className="w-full justify-start"
+              >
+                {isDark ? <Sun className="w-4 h-4 mr-2" /> : <Moon className="w-4 h-4 mr-2" />}
+                {isDark ? "Light Mode" : "Dark Mode"}
+              </Button>
+            </div>
           </div>
         )}
       </div>

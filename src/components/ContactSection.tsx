@@ -12,9 +12,8 @@ import {
   MapPin, 
   Phone, 
   Instagram, 
-  Twitter, 
-  Linkedin, 
-  Youtube 
+  Twitter,
+  Video
 } from "lucide-react";
 
 const ContactSection = () => {
@@ -81,23 +80,16 @@ const ContactSection = () => {
     {
       icon: Twitter,
       label: "Twitter/X",
-      handle: "@evidenceezen",
-      link: "https://twitter.com/evidenceezen",
+      handle: "@evidenceezenwukwe",
+      link: "https://twitter.com/evidenceezenwukwe",
       color: "hover:text-blue-400"
     },
     {
-      icon: Linkedin,
-      label: "LinkedIn",
-      handle: "Ezenwukwe Okwunna Evidence",
-      link: "https://linkedin.com/in/evidenceezenwukwe",
-      color: "hover:text-blue-600"
-    },
-    {
-      icon: Youtube,
-      label: "YouTube",
-      handle: "The Nexus Initiative",
-      link: "https://youtube.com/@thenexusinitiative",
-      color: "hover:text-red-500"
+      icon: Video,
+      label: "TikTok",
+      handle: "@evidenceezenwukwe",
+      link: "https://tiktok.com/@evidenceezenwukwe",
+      color: "hover:text-gray-300"
     }
   ];
 
@@ -132,7 +124,7 @@ const ContactSection = () => {
                   </div>
 
                   <form onSubmit={handleSubmit} className="space-y-4">
-                    <div className="grid md:grid-cols-2 gap-4">
+                    <div className="space-y-4">
                       <div>
                         <label htmlFor="name" className="block text-sm font-medium mb-2">
                           Full Name
@@ -285,20 +277,6 @@ const ContactSection = () => {
               </CardContent>
             </Card>
 
-            {/* Availability Status */}
-            <Card className="glass-card">
-              <CardContent className="p-6">
-                <div className="flex items-center space-x-4">
-                  <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
-                  <div>
-                    <div className="font-semibold">Available for Partnerships</div>
-                    <div className="text-sm text-muted-foreground">
-                      Open to collaborations and speaking opportunities
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
 
