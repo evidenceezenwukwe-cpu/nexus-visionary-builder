@@ -63,9 +63,6 @@ const MissionSection = () => {
                     <div className="w-32 h-32 bg-gradient-to-r from-primary to-accent rounded-full flex items-center justify-center mx-auto animate-glow">
                       <BookOpen className="w-16 h-16 text-primary-foreground" />
                     </div>
-                    <div className="absolute -top-2 -right-2 w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center animate-bounce">
-                      <Zap className="w-6 h-6 text-white" />
-                    </div>
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold text-primary">Transforming Africa</h3>

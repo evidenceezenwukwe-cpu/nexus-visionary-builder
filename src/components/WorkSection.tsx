@@ -101,9 +101,6 @@ const WorkSection = () => {
                     <div className="w-32 h-32 bg-gradient-to-r from-primary to-accent rounded-full flex items-center justify-center mx-auto animate-glow">
                       <Building2 className="w-16 h-16 text-primary-foreground" />
                     </div>
-                    <div className="absolute -top-2 -right-2 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
-                      <span className="text-white text-xs font-bold">✓</span>
-                    </div>
                   </div>
                   <div>
                     <h4 className="text-xl font-semibold">Active & Growing</h4>
