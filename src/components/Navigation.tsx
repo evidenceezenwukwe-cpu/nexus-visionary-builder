@@ -1,12 +1,15 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Sun, Moon } from "lucide-react";
+import { Menu, X, Sun, Moon, LogOut } from "lucide-react";
+import { Link } from "react-router-dom";
+import { useAuth } from "@/hooks/useAuth";
 import nexusLogo from "@/assets/nexus-logo.jpg";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isDark, setIsDark] = useState(true);
   const [scrolled, setScrolled] = useState(false);
+  const { user, signOut } = useAuth();
 
   useEffect(() => {
     // Set initial dark mode
@@ -62,6 +65,21 @@ const Navigation = () => {
                 {link.label}
               </a>
             ))}
+            {user ? (
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={signOut}
+                className="flex items-center gap-2"
+              >
+                <LogOut className="w-4 h-4" />
+                Sign Out
+              </Button>
+            ) : (
+              <Button variant="default" size="sm" asChild>
+                <Link to="/auth">Sign In</Link>
+              </Button>
+            )}
           </div>
 
           {/* Mobile Menu */}
@@ -90,7 +108,7 @@ const Navigation = () => {
                 {link.label}
               </a>
             ))}
-            <div className="border-t border-border mt-4 pt-4">
+            <div className="border-t border-border mt-4 pt-4 space-y-2">
               <Button
                 variant="outline"
                 size="sm"
@@ -100,6 +118,21 @@ const Navigation = () => {
                 {isDark ? <Sun className="w-4 h-4 mr-2" /> : <Moon className="w-4 h-4 mr-2" />}
                 {isDark ? "Light Mode" : "Dark Mode"}
               </Button>
+              {user ? (
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={signOut}
+                  className="w-full justify-start"
+                >
+                  <LogOut className="w-4 h-4 mr-2" />
+                  Sign Out
+                </Button>
+              ) : (
+                <Button variant="default" size="sm" className="w-full" asChild>
+                  <Link to="/auth">Sign In</Link>
+                </Button>
+              )}
             </div>
           </div>
         )}
