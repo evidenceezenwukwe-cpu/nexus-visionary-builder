@@ -73,15 +73,15 @@ const ContactSection = () => {
     {
       icon: Instagram,
       label: "Instagram",
-      handle: "@evidenceezenwukwe",
-      link: "https://instagram.com/evidenceezenwukwe",
+      handle: "@ezenwukwe evidence",
+      link: "https://instagram.com/ezenwukwe evidence",
       color: "hover:text-pink-500"
     },
     {
       icon: Twitter,
-      label: "Twitter/X",
-      handle: "@evidenceezenwukwe",
-      link: "https://twitter.com/evidenceezenwukwe",
+      label: "X",
+      handle: "@okwunnaevidence",
+      link: "https://twitter.com/okwunnaevidence",
       color: "hover:text-blue-400"
     },
     {

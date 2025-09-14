@@ -99,7 +99,15 @@ const ProjectsSection = () => {
                         <span className="text-sm text-muted-foreground">One-time payment</span>
                       </div>
                       <div className="flex gap-2">
-                        <Button className="btn-hero flex-1 group">
+                        <Button 
+                          className="btn-hero flex-1 group"
+                          onClick={() => window.open(
+                            book.title.includes("100+ Sites") 
+                              ? "https://selar.com/49oz67"
+                              : "https://selar.com/87687vgp7q",
+                            "_blank"
+                          )}
+                        >
                           <Download className="mr-2 w-4 h-4" />
                           Get Your Copy
                           <ExternalLink className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
