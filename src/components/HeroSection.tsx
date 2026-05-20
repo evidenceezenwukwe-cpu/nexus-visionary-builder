@@ -26,7 +26,7 @@ const HeroSection = () => {
                   Lawyer • Entrepreneur • Builder
                 </p>
                 <p className="text-base sm:text-lg lg:text-xl text-muted-foreground font-light leading-relaxed max-w-2xl">
-                  Nigerian Law School graduate. Founder of Evicom Concept and Agbani Runs — building at the intersection of law, technology, and entrepreneurship.
+                  Nigerian Law School student. Founder of Evicom Concept — building at the intersection of law, technology, and entrepreneurship.
                 </p>
               </div>
             </div>
