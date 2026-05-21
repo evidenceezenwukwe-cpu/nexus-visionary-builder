@@ -37,7 +37,7 @@ const HeroSection = () => {
                   Lawyer • Entrepreneur • Builder
                 </p>
                 <p className="text-base sm:text-lg lg:text-xl text-muted-foreground font-light leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                  Nigerian Law School student (Enugu Campus), founder of Evicom Concept, and builder of Agbani Runs —
+                  Nigerian Law School student (Enugu Campus), founder of Evicom Concept and The Nexus Initiative —
                   empowering Africa through pragmatic education, technology, and purpose-driven entrepreneurship.
                 </p>
               </div>
