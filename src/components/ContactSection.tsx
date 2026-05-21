@@ -50,8 +50,8 @@ const ContactSection = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "evidence@thenexusinitiative.com",
-      link: "mailto:evidence@thenexusinitiative.com"
+      value: "evidenceezenwukwe@gmail.com",
+      link: "mailto:evidenceezenwukwe@gmail.com"
     },
     {
       icon: Phone,
@@ -71,7 +71,7 @@ const ContactSection = () => {
     {
       icon: Instagram,
       label: "Instagram",
-      handle: "@ezenwukweevidence",
+      handle: "@evidenceezenwukwe",
       link: "https://instagram.com/ezenwukweevidence",
       color: "hover:text-pink-500"
     },
