@@ -17,7 +17,7 @@ const WorkSection = () => {
     {
       number: "3",
       label: "Active Projects",
-      description: "Building Africa's future"
+      description: "The Evicom Concept( at evicomconcept.com.ng)"
     },
     {
       number: "1",
