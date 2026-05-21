@@ -19,7 +19,7 @@ const ProjectsSection = () => {
       title: "Build No-Code Apps with AI",
       description: "Master the art of building powerful applications without writing code. Learn how Lovable and other AI tools are revolutionizing software development.",
       cover: noCodeBookCover,
-      price: "₦5,000",
+      price: "₦70,000",
       status: "Available",
       features: ["Under 30 pages", "Step-by-step tutorials", "Real-world examples", "Bonus AI tools chapter"]
     }
