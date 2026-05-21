@@ -175,8 +175,7 @@ const MissionSection = () => {
               
               <div className="pt-6 border-t border-border">
                 <p className="text-muted-foreground italic">
-                  "The best time to plant a tree was 20 years ago. The second best time is now. 
-                  Let's plant the seeds of Africa's future today."
+                  "The best time to plant a tree was 20 years ago. The second best time is now."
                 </p>
               </div>
             </CardContent>
