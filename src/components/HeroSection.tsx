@@ -4,7 +4,7 @@ import professionalHeadshot from "@/assets/professional-headshot.webp";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background to-background">
+<section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background to-background pt-20 lg:pt-0">
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,hsl(var(--primary)/0.1)_0%,transparent_50%)]" />
 
