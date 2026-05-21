@@ -94,8 +94,8 @@ const ContactSection = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 lg:py-32 bg-gradient-to-b from-background to-secondary/20">
-      <div className="section-container">
+    <section id="contact" className="py-20 lg:py-32 bg-gradient-to-b from-background to-secondary/20 overflow-hidden">
+      <div className="section-container w-full">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-4xl lg:text-5xl font-display font-bold mb-6">
             Let's <span className="text-primary">Connect</span>
@@ -106,9 +106,9 @@ const ContactSection = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16">
           {/* Contact Form */}
-          <div className="animate-slide-in-left">
+          <div>
             <Card className="glass-card">
               <CardContent className="p-8">
                 <div className="space-y-6">
@@ -208,7 +208,7 @@ const ContactSection = () => {
           </div>
 
           {/* Contact Info & Social */}
-          <div className="space-y-8 animate-slide-in-right">
+          <div className="space-y-8">
             {/* Contact Information */}
             <Card className="glass-card">
               <CardContent className="p-8">
