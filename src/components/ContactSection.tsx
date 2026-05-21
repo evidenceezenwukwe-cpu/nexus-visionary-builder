@@ -92,8 +92,8 @@ const ContactSection = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 lg:py-32 bg-gradient-to-b from-background to-secondary/20 overflow-hidden">
-      <div className="section-container w-full">
+    <section id="contact" className="py-20 lg:py-32 bg-gradient-to-b from-background to-secondary/20">
+      <div className="section-container">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-4xl lg:text-5xl font-display font-bold mb-6">
             Let's <span className="text-primary">Connect</span>
@@ -211,15 +211,15 @@ const ContactSection = () => {
                   {contactInfo.map((info, index) => {
                     const Icon = info.icon;
                     const content = (
-                      <div className="flex items-center space-x-4 p-4 rounded-lg hover:bg-primary/5 transition-colors">
-                        <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <div className="flex items-center gap-4 p-4 rounded-lg hover:bg-primary/5 transition-colors">
+                        <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center shrink-0">
                           <Icon className="w-6 h-6 text-primary" />
                         </div>
-                        <div className="min-w-0">
+                        <div className="min-w-0 flex-1">
                           <div className="font-medium text-muted-foreground text-sm">
                             {info.label}
                           </div>
-                          <div className="font-semibold truncate">{info.value}</div>
+                          <div className="font-semibold break-all">{info.value}</div>
                         </div>
                       </div>
                     );
@@ -251,16 +251,14 @@ const ContactSection = () => {
                         href={social.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={`flex items-center space-x-4 p-4 rounded-lg hover:bg-primary/5 transition-all duration-300 group ${social.color}`}
+                        className={`flex items-center gap-4 p-4 rounded-lg hover:bg-primary/5 transition-all duration-300 group ${social.color}`}
                       >
-                        <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform flex-shrink-0">
+                        <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                           <Icon className="w-6 h-6 text-primary" />
                         </div>
-                        <div className="min-w-0">
+                        <div className="min-w-0 flex-1">
                           <div className="font-medium">{social.label}</div>
-                          <div className="text-sm text-muted-foreground truncate">
-                            {social.handle}
-                          </div>
+                          <div className="text-sm text-muted-foreground">{social.handle}</div>
                         </div>
                       </a>
                     );
@@ -271,7 +269,7 @@ const ContactSection = () => {
           </div>
         </div>
 
-        {/* Newsletter Signup */}
+        {/* Newsletter */}
         <div className="mt-20">
           <Card className="glass-card max-w-4xl mx-auto">
             <CardContent className="p-8 lg:p-12 text-center space-y-6">
@@ -300,4 +298,4 @@ const ContactSection = () => {
   );
 };
 
-export default ContactSection;
+export default ContactSection;                                                    
